@@ -1,0 +1,8 @@
+{
+  "hedge": ["may", "might", "could", "some", "preliminary", "associated with",
+            "suggests", "appears", "approximately"],
+  "negation": ["not", "no", "never", "neither", "nor", "without", "cannot"],
+  "modal": ["may", "might", "could", "would", "should", "must", "shall", "will", "can"],
+  "unit": ["percent", "kg", "km", "mb", "gb", "ms", "hours", "days", "weeks", "months",
+           "years", "usd", "eur", "gbp"]
+}

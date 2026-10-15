@@ -1,0 +1,27 @@
+super-humanizer
+Copyright (c) 2026 Will G.
+Released under the MIT License. See LICENSE.
+
+The rulebooks and word lists draw on the open-source projects below. Each is distributed under
+the MIT License, whose permission notice is the one in LICENSE, and each keeps its own copyright.
+
+- blader/humanizer, https://github.com/blader/humanizer
+  Copyright (c) 2025 Siqi Chen
+- hardikpandya/stop-slop, https://github.com/hardikpandya/stop-slop
+  Copyright (c) 2025 Hardik Pandya
+- petergyang/no-ai-slop, https://github.com/petergyang/no-ai-slop
+  Copyright (c) 2026 Peter Yang
+- dmmulroy/anti-slop, https://github.com/dmmulroy/anti-slop
+  Copyright (c) 2026 Dillon Mulroy
+- Aboudjem/humanizer-skill, https://github.com/Aboudjem/humanizer-skill
+  Copyright (c) 2026 Adam Boudjemaa
+- jpeggdev/humanize-writing, https://github.com/jpeggdev/humanize-writing
+  Copyright (c) 2025 jpeggdev
+- harshaneel/humanize, https://github.com/harshaneel/humanize
+  Copyright (c) 2026 Harshaneel Gokhale
+- lynote-ai/humanize-text, https://github.com/lynote-ai/humanize-text
+  Copyright (c) 2026 Lynote.ai
+
+The rules also draw on the research papers, style guides and Wikipedia page listed under Credits
+in README.md. The Wikipedia page is credited as a source of ideas, and its own text is available
+under the Creative Commons Attribution-ShareAlike 4.0 License.

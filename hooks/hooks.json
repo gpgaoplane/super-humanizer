@@ -1,0 +1,34 @@
+{
+  "description": "super-humanizer: the writing gate on Write and Edit, and the commit-message gate on shell calls",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {"type": "command",
+           "command": "sh \"${CLAUDE_PLUGIN_ROOT}/hooks/run-python.sh\" \"${CLAUDE_PLUGIN_ROOT}/scripts/gate_write.py\"",
+           "timeout": 10}
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {"type": "command",
+           "command": "sh \"${CLAUDE_PLUGIN_ROOT}/hooks/run-python.sh\" \"${CLAUDE_PLUGIN_ROOT}/scripts/gate_commit.py\"",
+           "timeout": 10, "if": "Bash(git *)"},
+          {"type": "command",
+           "command": "sh \"${CLAUDE_PLUGIN_ROOT}/hooks/run-python.sh\" \"${CLAUDE_PLUGIN_ROOT}/scripts/gate_commit.py\"",
+           "timeout": 10, "if": "Bash(gh *)"}
+        ]
+      },
+      {
+        "matcher": "PowerShell",
+        "hooks": [
+          {"type": "command",
+           "command": "sh \"${CLAUDE_PLUGIN_ROOT}/hooks/run-python.sh\" \"${CLAUDE_PLUGIN_ROOT}/scripts/gate_commit.py\"",
+           "timeout": 10}
+        ]
+      }
+    ]
+  }
+}

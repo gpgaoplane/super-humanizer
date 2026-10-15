@@ -1,0 +1,14 @@
+{
+  "name": "gpgaoplane",
+  "owner": {
+    "name": "Will G."
+  },
+  "description": "Will G.'s Claude Code plugins: super-humanizer, which takes the AI habits out of writing and keeps what it says.",
+  "plugins": [
+    {
+      "name": "super-humanizer",
+      "source": "./",
+      "description": "Detects AI-style writing in any artifact, rewrites what a rule can rewrite, and reports what it left for the human."
+    }
+  ]
+}
