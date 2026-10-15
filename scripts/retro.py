@@ -369,7 +369,7 @@ def _shipped(name="general"):
 
 
     path = hookio.plugin_root() / "references" / "rulebooks" / f"{name}.json"
-    return rulebook.load(path), path.read_bytes()
+    return rulebook.load(path), path.read_bytes().replace(b"\r\n", b"\n")
 
 
 def _hits(document, book):

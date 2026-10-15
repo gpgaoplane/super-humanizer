@@ -371,13 +371,14 @@ def _rule_bytes(settings, plugin_root):
 
 
 
+
     name = settings["rulebook"]
     shipped = plugin_root / "references" / "rulebooks" / f"{name}.json"
     overlay = hookio.plugin_data() / f"{name}.overlay.json"
     out = []
     for path in (shipped, overlay):
         try:
-            out.append(path.read_bytes())
+            out.append(path.read_bytes().replace(b"\r\n", b"\n"))
         except OSError:
             out.append(b"")
     return tuple(out)
