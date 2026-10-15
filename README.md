@@ -6,7 +6,7 @@
 
 A plugin for [Claude Code](https://code.claude.com/docs/en/overview)
 
-![version](https://img.shields.io/badge/version-1.4-6366F1?style=flat-square)
+![version](https://img.shields.io/badge/version-1.4.1-6366F1?style=flat-square)
 ![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-6366F1?style=flat-square)
 ![python](https://img.shields.io/badge/python-3.10%2B-6366F1?style=flat-square)
 ![license](https://img.shields.io/badge/license-MIT-6366F1?style=flat-square)
@@ -467,9 +467,19 @@ nothing under `voice: false` or under `mine` with no profile.
 
 ## Privacy
 
-- **No network calls.** The plugin's scripts read and write local files alone, and they never
-  call a model. Claude, in your own session, makes each judgment, and every judgment is saved to a
-  file beside your document that you can read.
+- **No network calls.** The plugin's scripts make no network call, and they never call a model.
+  Claude, in your own session, makes each judgment, and every judgment is saved to a file beside
+  your document that you can read.
+- **What it runs.** The hooks run on Claude's Write and Edit calls, on shell calls that start with
+  `git` or `gh`, and on PowerShell calls. Each goes through `hooks/run-python.sh`, which starts the
+  plugin's own Python scripts. A run asks `git` read-only questions to find a repository's root and
+  the files a branch changed. After a change to code it runs your project's formatter and tests:
+  `ruff` or `black` and `pytest` for Python, and `prettier` and `npm test` for JavaScript and
+  TypeScript.
+- **What it writes.** A report and a candidates file beside each document it reads, and the
+  verdicts file Claude writes there. A cleaned copy beside a deck, a workbook, a Word document or a
+  PDF. The voice profile and its ledger in `~/.claude/super-humanizer/`. In the plugin's data
+  folder, the refusal count, the rulebook overlay and the Python path the launcher found.
 - **Your voice stays on your machine.** The profile and its ledger live in
   `~/.claude/super-humanizer/` and nowhere else.
 - **Your project's own tools run as they always do.** After a change to code, the plugin runs

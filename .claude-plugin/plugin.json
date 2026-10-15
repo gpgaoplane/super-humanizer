@@ -1,6 +1,6 @@
 {
   "name": "super-humanizer",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Detects AI-style writing in any artifact, rewrites what a rule can rewrite, and reports what it left for the human.",
   "author": {
     "name": "Will G."
