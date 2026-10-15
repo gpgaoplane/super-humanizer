@@ -6,7 +6,7 @@
 
 A plugin for [Claude Code](https://code.claude.com/docs/en/overview)
 
-![version](https://img.shields.io/badge/version-1.4.2-6366F1?style=flat-square)
+![version](https://img.shields.io/badge/version-1.4.3-6366F1?style=flat-square)
 ![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-6366F1?style=flat-square)
 ![python](https://img.shields.io/badge/python-3.10%2B-6366F1?style=flat-square)
 ![license](https://img.shields.io/badge/license-MIT-6366F1?style=flat-square)
@@ -192,12 +192,8 @@ is missing, so the guard stays off in that setup.
 
 <br/>
 
-```bash
-git clone https://github.com/gpgaoplane/super-humanizer.git
-claude --plugin-dir ./super-humanizer
-```
-
-This loads the plugin for one session, which suits working on the plugin itself.
+Clone this repository, then start Claude Code with `claude --plugin-dir` followed by the
+clone's folder. This loads the plugin for one session, which suits working on the plugin itself.
 
 </details>
 
@@ -566,7 +562,7 @@ super-humanizer is released under the MIT License. See [LICENSE](LICENSE), and
 - [Hello-SimpleAI/chatgpt-comparison-detection](https://github.com/Hello-SimpleAI/chatgpt-comparison-detection), the HC3 corpus
 - Skill pages read for ideas: [reduce-ai-perception-v2](https://skillhub.cn/skills/user_ab5ae6ee/unclecheng-reduce-ai-perception-v2),
   [deslop](https://skillsmp.com/creators/openclaw/openclaw/agents-skills-deslop) and
-  [unslop](https://skills.sh/cursor/plugins/unslop)
+  unslop, from cursor/plugins on the skills.sh directory
 
 **Research**
 

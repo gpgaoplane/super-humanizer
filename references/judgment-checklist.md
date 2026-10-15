@@ -37,8 +37,8 @@ script calls a model.
 2. `<path>.humanize-verdicts.json`, written by the model, under this file. One row
    per candidate `fid`. `scripts/reconcile.py`'s own `_TEXT_FIELDS` names the six
    fields anything downstream reads from a row: `verdict` (one of `pass`, `FIRE` or
-   `n-a`), `exception` (an id from the rulebook's own `exceptions` map, only when a
-   pass rests on one), `rewrite` (the model's whole-unit replacement,
+   `n-a`), `exception` (an id from the rulebook's own `exceptions` map, only when a pass
+   verdict rests on one), `rewrite` (the model's whole-unit replacement,
    only when the model is proposing one), `twin` (the matching example from
    `references/twins.md`, quoted, only for a `strict` taxonomy flag), `meaning` (required beside every rewrite, see
    below) and `risk` (C003's Risk line, what else the change could damage, printed
@@ -489,8 +489,8 @@ Left for the human prints under it. A row that did carry a rewrite would need
 `f0001` FIREs: the sentence names the analyst who finished the numbers, so the
 text supports naming who filed the report, and the passive hides that actor,
 which is the entry's own fire line. A sentence that named no actor at all, such
-as "The report was filed late, and no one followed up on it afterward", would
-pass on the entry's own pass line instead, because an unknown actor is a pass. `f0002` passes on the
+as "The report was filed late, and no one followed up on it afterward", would pass
+on the entry's own pass line instead, because an unknown actor is a pass. `f0002` passes on the
 self-check entry's own criterion, no exception needed: "every reviewer on the
 pilot team" names a real, specific set the sentence itself states.
 

@@ -91,8 +91,8 @@ _LIMITS_ROWS = (
     "Edit until a post-hoc run cleans it.",
     "The tests mention in the Validation scope is a literal substring search of the test "
     "files for each edited unit's text, so a short unit can match by accident.",
-    "A file a project's prettier ignores is never checked, and the formatter stage reads "
-    "pass for it, as the project's own check would.",
+    "A file a project's prettier ignores is never checked, and the formatter stage reads pass "
+    "for it, as the project's own check would.",
     "Under CI=1, which the validation stage sets for npm test, a jest run that needs a new "
     "snapshot fails, so such a package reads fail before any rewrite.",
     "A class list passed through a member call on a helper object, an array, or a cva variant "
