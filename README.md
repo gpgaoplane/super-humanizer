@@ -6,7 +6,7 @@
 
 A plugin for [Claude Code](https://code.claude.com/docs/en/overview)
 
-![version](https://img.shields.io/badge/version-1.4.3-6366F1?style=flat-square)
+![version](https://img.shields.io/badge/version-1.4.4-6366F1?style=flat-square)
 ![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-6366F1?style=flat-square)
 ![python](https://img.shields.io/badge/python-3.10%2B-6366F1?style=flat-square)
 ![license](https://img.shields.io/badge/license-MIT-6366F1?style=flat-square)

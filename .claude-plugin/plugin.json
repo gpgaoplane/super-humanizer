@@ -1,12 +1,16 @@
 {
   "name": "super-humanizer",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "Detects AI-style writing in any artifact, rewrites what a rule can rewrite, and reports what it left for the human.",
   "author": {
     "name": "Will G."
   },
   "homepage": "https://github.com/gpgaoplane/super-humanizer",
   "repository": "https://github.com/gpgaoplane/super-humanizer",
+  "documentationUrl": "https://github.com/gpgaoplane/super-humanizer#readme",
+  "privacyPolicyUrl": "https://github.com/gpgaoplane/super-humanizer#privacy",
+  "supportUrl": "https://github.com/gpgaoplane/super-humanizer/issues",
+  "termsOfServiceUrl": "https://github.com/gpgaoplane/super-humanizer/blob/master/LICENSE",
   "license": "MIT",
   "keywords": [
     "writing",
