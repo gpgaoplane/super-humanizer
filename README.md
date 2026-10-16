@@ -6,7 +6,7 @@
 
 A plugin for [Claude Code](https://code.claude.com/docs/en/overview)
 
-![version](https://img.shields.io/badge/version-1.4.4-6366F1?style=flat-square)
+![version](https://img.shields.io/badge/version-1.4.5-6366F1?style=flat-square)
 ![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-6366F1?style=flat-square)
 ![python](https://img.shields.io/badge/python-3.10%2B-6366F1?style=flat-square)
 ![license](https://img.shields.io/badge/license-MIT-6366F1?style=flat-square)
@@ -472,6 +472,9 @@ nothing under `voice: false` or under `mine` with no profile.
   the files a branch changed. After a change to code it runs your project's formatter and tests:
   `ruff` or `black` and `pytest` for Python, and `prettier` and `npm test` for JavaScript and
   TypeScript.
+- **What it reads.** The files and folders you point it at, and the text Claude writes or edits
+  while the guard is on. These can hold names, emails or other personal details. A report, a retro
+  file or the voice ledger can quote lines from them, and all of it stays on your machine.
 - **What it writes.** A report and a candidates file beside each document it reads, and the
   verdicts file Claude writes there. A cleaned copy beside a deck, a workbook, a Word document or a
   PDF. The voice profile and its ledger in `~/.claude/super-humanizer/`. In the plugin's data
